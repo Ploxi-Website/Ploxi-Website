@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ploxi Consult</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/company_logo_1.png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/svgmap@2.14.0/dist/svgMap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container-xxl bg-white p-0" style="background-color: #FAFBFB;">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+
+      <!-- Navbar & Hero Start -->
+      <div class="container-xxl position-relative p-0">
+        <nav
+          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+          style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);"
+        >
+          <a href="index.html" class="navbar-brand p-0">
+            <img src="img/company_logo.png" style="width: 64px; height:64px;" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav  top ms-auto py-0">
+              <a href="about.html" class="nav-item top-link nav-link active">Home</a>
+              <a href="about.html" class="nav-item top-link nav-link">About</a>
+              <a href="service.html" class="nav-item top-link nav-link"
+                >Service</a
+              >
+              <a href="market.html" class="nav-item top-link nav-link"
+                >Market</a
+              >
+              <a href="blog.html" class="nav-item top-link nav-link">Blog</a>
+            </div>
+            <a
+              href="quote.html"
+              class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5"
+              >Free Consultation</a
+            >
+          </div>
+        </nav>
+
+        <div
+          class="container-xxl bg-dark page-header"
+          style="min-height: 100vh; display: flex; align-items: center ;padding-top: 11rem; padding-bottom: 2rem;"
+        >
+          <div class="container py-2 wow zoomIn" data-wow-delay="0.1s">
+            <div
+              class="row align-items-center g-4 text-center text-lg-start ps-lg-2 mb-3"
+            >
+              <!-- Left Section - Content -->
+              <div class="col-lg-6">
+                <h1 class="display-6 text-white fw-bold mb-4">
+                  <span style="color: #16A34A;">Welcome to</span><br />Ploxi Consult
+                </h1>
+                <p class=" mb-4 lh-base" style="font-size: 1rem; color: #4b5563;">
+                  Ploxi is a climate transition catalyst working across
+                  stakeholder spaces to address the growing demand for
+                  sustainability transformations. We offer end-to-end
+                  sustainability services to organisations that need to meet
+                  their net-zero and ESG goals.
+                </p>
+                <!-- <p class="mb-3" style="font-size: 1rem; color: #4b5563;">
+                  We do this across
+                </p>
+
+                Icons Row
+                <div class="row g-3 mb-3">
+                  <div class="col-6 col-md-3">
+                    <div>
+                      <img
+                        src="img/Home_Energy.png"
+                        alt="Energy"
+                        class="img-fluid"
+                        style="max-width: 140px; height: 140px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div>
+                      <img
+                        src="img/Home_Waste.png"
+                        alt="Waste"
+                        class="img-fluid"
+                        style="max-width: 148px; height: 140px; border-radius: 50%"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div>
+                      <img
+                        src="img/Home_Air.png"
+                        alt="Air"
+                        class="img-fluid"
+                        style="max-width: 140px; height: 140px"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div>
+                      <img
+                        src="img/Home_water.png"
+                        alt="Water"
+                        class="img-fluid"
+                        style="max-width: 140px; height: 140px; border-radius: 50%;"
+                      />
+                    </div>
+                  </div>
+                </div> -->
+
+                <!-- Contact Button -->
+                <a href="contact.html" class="btn btn-outline-light rounded-pill px-4 py-3" style="background-color: #16A34A; color: white; border: none; font-weight: bold;"
+                  >Contact Us</a
+                >
+              </div>
+
+              <!-- Right Section - Illustration -->
+              <div class="col-lg-6 ml-auto text-center text-lg-end">
+                <img
+                  src="img/Home_hero2.png"
+                  alt="Ploxi Consult Illustration"
+                  class="img-fluid"
+                  style="max-height: 70vh; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar & Hero End -->
+
+      <!-- About Start -->
+      <div class="container-xxl py-2">
+        <div class="container wow fadeInUp" data-wow-delay="0.1s">
+          <div class="row align-items-center g-5 ">
+            <!-- Left Section - Content -->
+            <div class="col-lg-6">
+              <h2 class="display-6 fw-bold mb-4">For sustainable growth</h2>
+              <p class="text-muted mb-5">
+                At Ploxi, we focus on your business transformation while
+                maintaining growth to the bottom line.
+              </p>
+
+              <!-- Our Approach -->
+              <div class="d-flex mb-4">
+                <div class="flex-shrink-0 me-4">
+                  <div
+                    class=" rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 60px; height: 60px; background-color: #16A34A;"
+                  >
+                    <i class="fas fa-users " style="color: white;"></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <h5 class="fw-bold mb-2">Our Approach</h5>
+                  <p class="text-muted mb-0">
+                    Using sustainable economic growth principles, Ploxi aims to
+                    meet present needs without compromising the future by
+                    balancing economic development with environmental.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Our Impact -->
+              <div class="d-flex mb-5">
+                <div class="flex-shrink-0 me-4">
+                  <div
+                    class=" rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 60px; height: 60px; background-color: #16A34A;"
+                  >
+                    <i class="fas fa-chart-line" style="color: white;" ></i>
+                  </div>
+                </div>
+                <div class="flex-grow-1">
+                  <h5 class="fw-bold mb-2">Our Impact</h5>
+                  <p class="text-muted mb-0">
+                    Our methodology sets forth an immediate gap assessment in
+                    your current ESG transformation activity and enables us to
+                    work on decarbonisation to deliver actual emission
+                    reduction.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section - Diagram -->
+            <div class="col-lg-6 text-center">
+              <img
+                src="img/esg1.jpeg"
+                alt="Sustainable ROI Diagram"
+                class="img-fluid"
+                style="max-height: 60vh; width: auto; border-radius: 50%;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About End -->
+      <!-- Stakeholder Start  -->
+      <div class="container-xxl py-2 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Our Stakeholders</h2>
+            <p class="text-muted fs-5">Making Net-Zero Accessible </p>
+          </div>
+
+          <!-- Stakeholder Cards -->
+          <div class="row gx-5 gy-4 justify-content-center">
+            <!-- Climate Finance Card -->
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="card cardhome h-100 border-0 bg-darker text-white rounded-4 shadow-lg"
+              >
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="text-center mb-4">
+                    <img
+                      src="img/Home_Finance.png"
+                      alt="Climate Finance"
+                      style="max-width: 200px"
+                    />
+                  </div>
+                  <h1 class="fs-3 fw-bold mb-4 text-center" style="color: white;">
+                    Climate<br />Finance
+                  </h1>
+                  <p class="text-center mb-4" style="color: white;">
+                    Identify opportunities for investments, access our risk
+                    assessment and due diligence support for deep technologies.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Clean Tech Businesses Card -->
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="card cardhome h-100 border-0 bg-light rounded-4 bg-white shadow-lg"
+              >
+                <div class="card-body p-4 d-flex flex-column">
+                  <div class="text-center mb-4">
+                    <img
+                      src="img/Home_Cleantech.png"
+                      alt="Clean Tech Businesses"
+                      class="img-fluid"
+                      style="width: 262px; height: 190px"
+                    />
+                  </div>
+                  <h1 class="fs-3 fw-bold mb-4 text-center">
+                    Clean Tech<br />Buinesses
+                  </h1>
+                  <p class="text-center text-muted mb-4">
+                    Increase your market reach, break into new regions and
+                    optimize revenue. Provide assistance to access capital.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Corporates & Industries Card -->
+            <div class="col-lg-3 col-md-6">
+              <div
+                class="card cardhome h-100 border-0 rounded-4"
+                style="background-color: #e8f3ed"
+              >
+                <div class="card-body p-4 d-flex flex-column shadow-lg">
+                  <div class="text-center mb-4">
+                    <img
+                      src="img/Home_Industries.png"
+                      alt="Corporates & Industries"
+                      class="img-fluid"
+                      style="max-width: 200px"
+                    />
+                  </div>
+                  <h1 class="fs-3 fw-bold mb-4 text-center">
+                    Corporations<br />& Industries
+                  </h1>
+                  <p class="text-center text-muted mb-0">
+                    Balance financial obligations, growth trajectory and SDG
+                    through holistic net-zero advisory from our expert team.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Government Institutions Card -->
+            <!-- <div class="col-lg-3 col-md-6">
+    <div class="card h-100 border-0 rounded-4" style="background-color: #fce8e8;">
+        <div class="card-body p-4 d-flex flex-column align-items-center justify-content-center shadow-lg">
+            
+            <div class="text-center">
+                
+                <i class="fas fa-plus-circle fa-5x text-muted mb-3"></i>
+                <p class="text-muted">Add More</p>
+            </div>
+        </div>
+    </div>
+</div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Stakeholders End -->
+      <!-- Company Logos Start -->
+
+<!-- Split-Background Marquee Logo Section -->
+<div class="marquee-logos-section mt-5">
+  <!-- Three-column background -->
+  <div class="three-bg"></div>
+  <!-- Marquee for logos -->
+  <div class="marquee-track">
+    <!-- Repeat your logo cards TWICE for infinite loop effect -->
+    <div class="logo-card">
+      <img src="img/logonew3-removebg-preview.png" alt="Futr Energy" style="max-width: 80px;">
+      <p class="logo-label">360ONE Asset</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo2-removebg-preview.png" alt="BioFuture Additives" style="max-width: 80px;">
+      <p class="logo-label">BioFuture Additives</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo3-removebg-preview.png" alt="Quark Solar" style="max-width: 80px;">
+      <p class="logo-label dark-label">Quark Solar</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo4-removebg-preview.png" alt="Kishan Infrastructure" style="max-width: 80px;">
+      <p class="logo-label dark-label">Kishan Infrastructure</p>
+    </div>
+    <div class="logo-card ">
+      <img src="img/logonew2-removebg-preview.png" alt="Colliers" style="max-width: 80px;">
+      <p class="logo-label dark-label">Colliers</p>
+    </div>
+    <!-- <div class="logo-card">
+      <img src="img/logonew1-removebg-preview.png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">JohnsonControls</p>
+    </div> -->
+    <div class="logo-card">
+      <img src="img/logonew4-removebg-preview (1).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Neogreenpower</p>
+    </div>
+     <div class="logo-card">
+      <img src="img/logonew5-removebg-preview (2).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Solairegen</p>
+    </div>
+     <div class="logo-card">
+      <img src="img/logo6-removebg-preview (3).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Treeni</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo-removebg-preview (4).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">globalnetworkforzero</p>
+    </div>
+    <!-- Duplicate for seamless effect -->
+    <div class="logo-card">
+      <img src="img/logonew3-removebg-preview.png" alt="Futr Energy" style="max-width: 80px;">
+      <p class="logo-label">360ONE Asset</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo2-removebg-preview.png" alt="BioFuture Additives" style="max-width: 80px;">
+      <p class="logo-label">BioFuture Additives</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo3-removebg-preview.png" alt="Quark Solar" style="max-width: 80px;">
+      <p class="logo-label dark-label">Quark Solar</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo4-removebg-preview.png" alt="Kishan Infrastructure" style="max-width: 80px;">
+      <p class="logo-label dark-label">Kishan Infrastructure</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logonew2-removebg-preview.png" alt="Colliers" style="max-width: 80px;">
+      <p class="logo-label dark-label">Colliers</p>
+    </div>
+    <!-- <div class="logo-card">
+      <img src="img/logonew1-removebg-preview.png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">JohnsonControls</p>
+    </div> -->
+    <div class="logo-card">
+      <img src="img/logonew4-removebg-preview (1).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Neogreenpower</p>
+    </div>
+     <div class="logo-card">
+      <img src="img/logonew5-removebg-preview (2).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Solairegen</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo6-removebg-preview (3).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">Treeni</p>
+    </div>
+    <div class="logo-card">
+      <img src="img/logo-removebg-preview (4).png" alt="JohnsonControls" style="max-width: 80px;">
+      <p class="logo-label dark-label">globalnetworkforzero</p>
+    </div>
+  </div>
+</div>
+
+<!-- Company Logos End -->
+
+
+      <!-- Testimonial Start -->
+     <div class="container-xxl py-5">
+  <div class="container wow fadeInUp" data-wow-delay="0.1s">
+    <div class="row align-items-center">
+      <!-- Left Column: Content -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <!-- Main Heading -->
+        <h1 class="display-6 text-white fw-bold mb-3">
+    Ploxi Earth:
+    <span style="color: #16A34A; white-space: nowrap;">End-to-End Sustainability</span>
+</h1>
+
+
+        <!-- Description -->
+        <p class="text-muted mb-5">
+          An enterprise marketplace to facilitate collaboration between
+          the key transition stakeholders. Ploxi acts as an end-to-end
+          sustainability services platform, accessing the best ESG tools
+          available globally.
+        </p>
+
+        <!-- Enhanced Card Box -->
+        <div class="p-4 shadow position-relative" style="border: 2px solid #e8f5f1; border-radius: 20px; background: linear-gradient(135deg, #ffffff 0%, #f8fffe 100%);">
+          <!-- Decorative element -->
+          
+          <h4 class="fw-bold mb-4" style="color: #0E2E50;">
+            <i class="bi bi-check-circle-fill me-2" style="color: #16A34A;"></i>
+            Integrates climate stakeholders to
+          </h4>
+
+          <ol class="mb-4 fs-5 custom-list" style="padding-left: 1.5rem;">
+            <li class="mb-3" style="color: #374151;">
+              <strong style="color: #0E2E50;">Access</strong> climate capital
+            </li>
+            <li class="mb-3" style="color: #374151;">
+              <strong style="color: #0E2E50;">Accelerate</strong> growth and scale
+            </li>
+            <li class="mb-3" style="color: #374151;">
+              <strong style="color: #0E2E50;">Achieve</strong> sustainability and net-zero goals
+            </li>
+          </ol>
+
+          <!-- Enhanced CTA Buttons -->
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="https://www.ploxi.earth/" class="btn-custom-green">
+              <i class="bi bi-person-plus me-2"></i>
+              Register Now
+              <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="mailto:dhwani.sunku@ploxiconsult.com" class="btn-custom-outline-green">
+  <i class="bi bi-handshake me-2"></i>
+  Partner with Us
+  <i class="bi bi-arrow-right ms-2"></i>
+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Marketplace Image -->
+      <div class="col-lg-6" style="padding-left: 5rem;">
+        <img
+          src="img/ploxi marketplace screenshot (Edited).png"
+          alt="Sustainability Marketplace Dashboard"
+          class="img-fluid rounded-4 shadow"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- Testimonial End -->
+
+<!-- Operating Regions Section -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold" style="color: #0E2E50; font-size: 2.5rem;">
+      Operating Regions
+    </h2>
+    <div class="text-center mb-5">
+      <p class="text-muted fs-5">Hover over pins to see project details</p>
+    </div>
+    
+    <!-- Map Container -->
+    <div id="svgMap" style="min-height: 500px; border-radius: 15px; overflow: hidden;"></div>
+  </div>
+</div>
+    <!-- Blog Start -->
+<div class="container-xxl py-5">
+  <div class="container wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Section Header -->
+    <div class="text-center mb-5">
+      <h2 class="display-6 fw-bold mb-3" style="color: #0E2E50;">Latest Insights</h2>
+      <p class="text-muted">Stay updated with sustainability trends and clean technology developments</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Left: Blog Cards (8 columns) -->
+      <div class="col-lg-8">
+  <div id="home-latest-blogs" class="row g-4"></div>
+</div>
+
+       <!-- Right: Categories Sidebar (4 columns) -->
+      <div class="col-lg-4">
+        <div class="card border-0 shadow-sm rounded-4 p-4 sticky-top" style="top: 100px; z-index: 1;">
+          <h4 class="fw-bold mb-3" style="color: #0E2E50;">Blog Categories</h4>
+          <p class="text-muted small mb-4">Explore by topic</p>
+
+          <!-- Category List -->
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <a href="blog.html?category=Clean%20Energy"
+                 class="text-decoration-none d-flex align-items-center category-item p-3 rounded-3">
+                <span class="badge rounded-circle me-3"
+                      style="width: 35px; height: 35px; background: #16A34A; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white;">
+                  1
+                </span>
+                <span class="text-dark">Clean Energy</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="blog.html?category=ESG%20Reports"
+                 class="text-decoration-none d-flex align-items-center category-item p-3 rounded-3">
+                <span class="badge rounded-circle me-3"
+                      style="width: 35px; height: 35px; background: #16A34A; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white;">
+                  2
+                </span>
+                <span class="text-dark">ESG Reports</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="blog.html?category=Water%20Tech"
+                 class="text-decoration-none d-flex align-items-center category-item p-3 rounded-3">
+                <span class="badge rounded-circle me-3"
+                      style="width: 35px; height: 35px; background: #16A34A; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white;">
+                  3
+                </span>
+                <span class="text-dark">Water Tech</span>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="blog.html?category=Climate%20Finance"
+                 class="text-decoration-none d-flex align-items-center category-item p-3 rounded-3">
+                <span class="badge rounded-circle me-3"
+                      style="width: 35px; height: 35px; background: #16A34A; display: flex; align-items: center; justify-content: center; font-size: 14px; color: white;">
+                  4
+                </span>
+                <span class="text-dark">Climate Finance</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- View All Button -->
+    <div class="text-center mt-5">
+      <a href="blog.html" class="btn rounded-pill py-3 px-5" style="background-color: #16A34A; color: white; border: none;">
+        View All Articles
+        <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- Blog End -->
+
+      <!-- Newsletter Start -->
+      <div
+        class="container-xxl my-6 wow fadeInUp"
+        data-wow-delay="0.1s"
+        style="background: linear-gradient(90deg, #00a651 0%, #1e63db 100%);
+"
+      >
+        <div class="container px-lg-5" >
+          <div class="row align-items-center" style="height: 250px;">
+            <div class="col-12 col-md-6">
+              <h3 style="color: white;">Excited about sustainability?</h3>
+              <small style="color: white;"
+                >Join our email list and get access to blog articles about the global transition landscape.</small
+              >
+              <div class="position-relative w-100 mt-3">
+                <input
+                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                  type="text"
+                  placeholder="Enter Your Email"
+                  style="height: 48px"
+                />
+                <button
+                  type="button"
+                  class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                >
+                  <i class="fa fa-paper-plane text-primary fs-4"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+              <img
+                class="img-fluid mt-5"
+                style="max-height: 250px"
+                src="img/email-vector.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter End -->
+
+      <!-- Footer Start -->
+      <div
+        class="container-fluid text-light footer pt-5 wow fadeIn"
+        data-wow-delay="0.1s"
+        style="margin-top: 6rem;background-color: #0a1f36"
+      >
+        <div class="container py-5">
+          <div class="row g-5">
+            <div class="col-md-6 col-lg-3">
+              <h5 class="mb-4" style="color: white;">Get In Touch</h5>
+              <p>
+                <i class="fa fa-map-marker-alt me-3"></i>Embassy Golf Links Business Parks, Domlur, Bengaluru. Karnataka, India
+              </p>
+              <p><i class="fa fa-phone-alt me-3"></i>+91 77959 34859</p>
+              <p><i class="fa fa-envelope me-3"></i>contact@ploxiconsult.com</p>
+              <div class="d-flex pt-2">
+                <!-- <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href=""
+                  ><i class="fab fa-facebook-f"></i
+                ></a> -->
+                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ploxi.earth/"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/ploxi/?originalSubdomain=in"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="mb-4" style="color: white;">Quick Link</h5>
+              <a class="btn btn-link" href="about.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="market.html">Market</a>
+              <a class="btn btn-link" href="service.html">Service</a>
+              <a class="btn btn-link" href="blog.html">Blog</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class=" mb-4" style="color: white;">Popular Link</h5>
+              <a class="btn btn-link" href="about.html">About Us</a>
+              <a class="btn btn-link" href="contact.html">Contact Us</a>
+              <a class="btn btn-link" href="market.html">Market</a>
+              <a class="btn btn-link" href="service.html">Service</a>
+              <a class="btn btn-link" href="blog.html">Blog</a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h5 class="mb-4" style="color: white;">Newsletter</h5>
+              <p>
+                Join our email list and get access to blog articles about the global transition landscape.
+              </p>
+              <div class="position-relative w-100 mt-3">
+                <input
+                  class="form-control border-0 rounded-pill w-100 ps-4 pe-5"
+                  type="text"
+                  placeholder="Your Email"
+                  style="height: 48px"
+                />
+                <button
+                  type="button"
+                  class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                >
+                  <i class="fa fa-paper-plane text-primary fs-4"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End -->
+
+      <!-- Back to Top -->
+      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+        ><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.10.0/dist/svgMap.min.js"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script type="module" src="js/home-latest-blogs.js"></script>
+
+  </body>
+</html>
