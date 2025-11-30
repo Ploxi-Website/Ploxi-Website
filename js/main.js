@@ -129,7 +129,7 @@ setTimeout(function() {
       top: '42%', left: '72%',
       country: 'India',
       image: 'img/place.png',
-      offices: 'Head Quaters',
+      offices: 'Head Quarters',
       year: 'registered in 2024',
     },
     {

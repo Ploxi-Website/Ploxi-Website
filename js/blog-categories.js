@@ -93,7 +93,7 @@ client.fetch(query, {cats: categoryTitles}).then(posts => {
     </div>
   </div>
 `
-
+      
       container.appendChild(col)
     })
   })
@@ -107,15 +107,20 @@ client.fetch(query, {cats: categoryTitles}).then(posts => {
   })
 })
 
-const params = new URLSearchParams(window.location.search)
-const filterCategory = params.get('category')
+document.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const filterCategory = params.get('category');
 
-// after you finish rendering all four category sections:
-if (filterCategory) {
-  const anchor = document.querySelector(
-    `[data-category-section="${filterCategory}"]`,
-  )
-  if (anchor) {
-    anchor.scrollIntoView({behavior: 'smooth'})
-  }
-}
+  // Delay to ensure all content is finished rendering (especially if loading blog posts)
+  setTimeout(() => {
+    if (filterCategory) {
+      const anchor = document.querySelector(
+        `[data-category-section="${filterCategory}"]`
+      );
+      console.log("Found anchor:", anchor);
+      if (anchor) {
+        anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, 1000); // Adjust delay if needed
+});
