@@ -1125,3 +1125,27 @@ a.btn[style*="#16A34A"]:hover {
     padding-right: 0;
     border-right: none;
 }
+
+.blog-content p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.blog-content strong {
+  font-weight: bold;
+}
+
+.blog-content em {
+  font-style: italic;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3 {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+}
