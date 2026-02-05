@@ -31,19 +31,19 @@
   <!-- Template Stylesheet -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/svgmap@2.14.0/dist/svgMap.min.css" rel="stylesheet">
-  
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
   <!-- google analytics -->
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z86XXHBYXC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z86XXHBYXC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-Z86XXHBYXC');
-</script>
+    gtag('config', 'G-Z86XXHBYXC');
+  </script>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
       <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
         style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);">
         <a href="index.html" class="navbar-brand p-0">
-          <img src="img/company_logo.png" style="width: 64px; height:64px;" alt="Logo" />
+          <img src="img/company_logo.png" style="width: 64px; height:64px; object-fit: contain;" alt="Logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
           <span class="fa fa-bars"></span>
@@ -73,6 +73,7 @@
             <a href="about.html" class="nav-item top-link nav-link">About</a>
             <a href="service.html" class="nav-item top-link nav-link">Service</a>
             <a href="market.html" class="nav-item top-link nav-link">Market</a>
+            <a href="tools.html" class="nav-item top-link nav-link">Tools</a>
             <a href="blog.html" class="nav-item top-link nav-link">Blog</a>
           </div>
           <a href="quote.html" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Free Consultation</a>
@@ -587,6 +588,7 @@
             <a class="btn btn-link" href="contact.html">Contact Us</a>
             <a class="btn btn-link" href="market.html">Market</a>
             <a class="btn btn-link" href="service.html">Service</a>
+            <a class="btn btn-link" href="tools.html">Tools</a>
             <a class="btn btn-link" href="blog.html">Blog</a>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -595,6 +597,7 @@
             <a class="btn btn-link" href="contact.html">Contact Us</a>
             <a class="btn btn-link" href="market.html">Market</a>
             <a class="btn btn-link" href="service.html">Service</a>
+            <a class="btn btn-link" href="tools.html">Tools</a>
             <a class="btn btn-link" href="blog.html">Blog</a>
           </div>
           <div class="col-md-6 col-lg-3">
@@ -604,12 +607,13 @@
             </p>
             <div class="position-relative w-100 mt-3">
               <form id="newsletter-form">
-              <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" placeholder="Your Email" id="email-input"
-                style="height: 48px" />
-              <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2" id="subscribe-btn">
-                <i class="fa fa-paper-plane text-primary fs-4"></i>
-              </button>
-              <p id="message" style="display:none; margin-top: 10px;"></p>
+                <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" placeholder="Your Email"
+                  id="email-input" style="height: 48px" />
+                <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                  id="subscribe-btn">
+                  <i class="fa fa-paper-plane text-primary fs-4"></i>
+                </button>
+                <p id="message" style="display:none; margin-top: 10px;"></p>
               </form>
             </div>
           </div>
@@ -636,8 +640,8 @@
   <!-- Template Javascript -->
   <script src="js/main.js"></script>
   <script type="module" src="js/home-latest-blogs.js"></script>
-   <script src="js/newsletter.js"></script>
-   <script type="module" src="js/blog-categories.js"></script>
+  <script src="js/newsletter.js"></script>
+  <script type="module" src="js/blog-categories.js"></script>
 
 </body>
 

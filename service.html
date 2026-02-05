@@ -1,503 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Ploxi Consult</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="" name="keywords" />
-    <meta content="" name="description" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/company_logo_1.png" />
+<head>
+  <meta charset="utf-8" />
+  <title>Ploxi Consult</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/company_logo_1.png" />
 
-    <!-- Icon Font Stylesheet -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap"
+    rel="stylesheet" />
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet" />
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet" />
-     <style>
-        .tooltip-wrapper {
-            position: relative;
-            cursor: pointer;
-            display: inline-block;
-        }
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        .tooltip-wrapper:hover::after {
-            content: attr(data-tooltip);
-            position: absolute;
-            left: 100%;
-            top: 0;
-            margin-left: 10px;
-            padding: 8px 12px;
-            background-color: #16A34A;
-            color: white;
-            border-radius: 6px;
-            white-space: nowrap;
-            z-index: 1000;
-            font-size: 14px;
-        }
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    .tooltip-wrapper {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+    }
 
-        .tooltip-wrapper:hover::before {
-            content: '';
-            position: absolute;
-            left: 100%;
-            top: 10px;
-            margin-left: 4px;
-            border: 5px solid transparent;
-            border-right-color: #16A34A;
-        }
-    </style>
-    
+    .tooltip-wrapper:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      left: 100%;
+      top: 0;
+      margin-left: 10px;
+      padding: 8px 12px;
+      background-color: #16A34A;
+      color: white;
+      border-radius: 6px;
+      white-space: nowrap;
+      z-index: 1000;
+      font-size: 14px;
+    }
+
+    .tooltip-wrapper:hover::before {
+      content: '';
+      position: absolute;
+      left: 100%;
+      top: 10px;
+      margin-left: 4px;
+      border: 5px solid transparent;
+      border-right-color: #16A34A;
+    }
+  </style>
+
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z86XXHBYXC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-Z86XXHBYXC');
-</script>
-  </head>
-  
+    gtag('config', 'G-Z86XXHBYXC');
+  </script>
+</head>
 
-  <body>
-    <div class="container-xxl bg-white p-0">
-      <!-- Spinner Start -->
-      <div
-        id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
-      >
-        <div
-          class="spinner-border text-primary"
-          style="width: 3rem; height: 3rem"
-          role="status"
-        >
-          <span class="sr-only">Loading...</span>
-        </div>
+
+<body>
+  <div class="container-xxl bg-white p-0">
+    <!-- Spinner Start -->
+    <div id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+      <div class="spinner-border text-primary" style="width: 3rem; height: 3rem" role="status">
+        <span class="sr-only">Loading...</span>
       </div>
-      <!-- Spinner End -->
+    </div>
+    <!-- Spinner End -->
 
-      <!-- Navbar & Hero Start -->
-      <div class="container-xxl position-relative p-0">
-      <nav
-          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
-          style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);" 
-        >
-          <a href="index.html" class="navbar-brand p-0">
-            <img src="img/company_logo.png" style="width: 64px; height:64px;" alt="Logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="fa fa-bars"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav top ms-auto py-0">
-              <a href="index.html" class="nav-item top-link nav-link">Home</a>
-              <a href="about.html" class="nav-item top-link nav-link">About</a>
-              <a href="service.html" class="nav-item top-link nav-link active"
-                >Service</a
-              >
-              <a href="market.html" class="nav-item top-link nav-link"
-                >Market</a
-              >
-              <a href="blog.html" class="nav-item top-link nav-link">Blog</a>
-            </div>
-            <a
-              href="quote.html"
-              class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5"
-              >Free Consultation</a
-            >
+    <!-- Navbar & Hero Start -->
+    <div class="container-xxl position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+        style="box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);">
+        <a href="index.html" class="navbar-brand p-0">
+          <img src="img/company_logo.png" style="width: 64px; height:64px; object-fit: contain;" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav top ms-auto py-0">
+            <a href="index.html" class="nav-item top-link nav-link">Home</a>
+            <a href="about.html" class="nav-item top-link nav-link">About</a>
+            <a href="service.html" class="nav-item top-link nav-link active">Service</a>
+            <a href="market.html" class="nav-item top-link nav-link">Market</a>
+            <a href="tools.html" class="nav-item top-link nav-link">Tools</a>
+            <a href="blog.html" class="nav-item top-link nav-link">Blog</a>
           </div>
-        </nav>
+          <a href="quote.html" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Free Consultation</a>
+        </div>
+      </nav>
 
-        <div class="container-xxl bg-dark page-header" style="padding-top: 12rem; padding-bottom: 2rem;">
-          <div class="container text-center wow zoomIn" data-wow-delay="0.1s">
-            <div class="row">
-              <!-- Left Section -->
-              <div
-                class="col-lg-4 border-end border-black border-opacity-100 pe-lg-5 mb-4 mb-lg-0 text-start"
-              >
-                <div class="text-center">
-                  <div class="text-left mb-4">
-                    <h1 class="display-6 text-white fw-bold mb-3">
-                  <span style="color: #16A34A;">Engage with</span><br />Ploxi 
-                </h1>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <img
-                    src="img/service-hero1.png"
-                    alt="Team Illustration"
-                    class="rounded-circle img-fluid"
-                    style="width: 250px; height: 250px; object-fit: cover"
-                  />
+      <div class="container-xxl bg-dark page-header" style="padding-top: 12rem; padding-bottom: 2rem;">
+        <div class="container text-center wow zoomIn" data-wow-delay="0.1s">
+          <div class="row">
+            <!-- Left Section -->
+            <div class="col-lg-4 border-end border-black border-opacity-100 pe-lg-5 mb-4 mb-lg-0 text-start">
+              <div class="text-center">
+                <div class="text-left mb-4">
+                  <h1 class="display-6 text-white fw-bold mb-3">
+                    <span style="color: #16A34A;">Engage with</span><br />Ploxi
+                  </h1>
                 </div>
               </div>
-              <!-- Right Section -->
-              <div class="col-lg-8 ps-lg-5 text-start">
-                <h2 class="display-6 text-white fw-bold mb-4">Our Approach</h2>
-                <div class="text-white">
-                  <p class="mb-4 lh-lg opacity-90" style="font-size: 1rem; color: #4b5563;">
-                    We are re-defining how sustainability transactions occur,
-                    through a multi sectoral approach we are addressing a
-                    comprehensive set of requirements for the ecosystem. By
-                    interacting with each stakeholder, our advisory practice
-                    bridges each player by providing value cross-sectionally. We
-                    bring multiple capabilities with a focus on increasing the
-                    speed of sustainability purchasing, ESG transformation and
-                    decision making to attain and maintain net-zero
-                    certification.
-                  </p>
-                </div>
+              <div class="text-center">
+                <img src="img/service-hero1.png" alt="Team Illustration" class="rounded-circle img-fluid"
+                  style="width: 250px; height: 250px; object-fit: cover" />
+              </div>
+            </div>
+            <!-- Right Section -->
+            <div class="col-lg-8 ps-lg-5 text-start">
+              <h2 class="display-6 text-white fw-bold mb-4">Our Approach</h2>
+              <div class="text-white">
+                <p class="mb-4 lh-lg opacity-90" style="font-size: 1rem; color: #4b5563;">
+                  We are re-defining how sustainability transactions occur,
+                  through a multi sectoral approach we are addressing a
+                  comprehensive set of requirements for the ecosystem. By
+                  interacting with each stakeholder, our advisory practice
+                  bridges each player by providing value cross-sectionally. We
+                  bring multiple capabilities with a focus on increasing the
+                  speed of sustainability purchasing, ESG transformation and
+                  decision making to attain and maintain net-zero
+                  certification.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Navbar & Hero End -->
+    </div>
+    <!-- Navbar & Hero End -->
 
-      <!-- Service Start -->
-      <div class="container-xxl py-2">
-        <div
-          class="container-xxl position-relative wow fadeInUp"
-          style="
+    <!-- Service Start -->
+    <div class="container-xxl py-2">
+      <div class="container-xxl position-relative wow fadeInUp" style="
             background-image: url('img/service-end-end.png');
             background-size: cover;
             background-position: center;
             min-height: 300px;
-          "
-        >
-          <!-- Optional overlay for better text readability -->
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(24, 163, 140, 0.834); z-index: 1"
-          ></div>
+          ">
+        <!-- Optional overlay for better text readability -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+          style="background-color: rgba(24, 163, 140, 0.834); z-index: 1"></div>
 
-          <div class="container position-relative py-5" style="z-index: 2">
-            <div class="row align-items-center">
-              <!-- Left Column: Main Heading and Description -->
-              <div class="col-lg-5 mb-4 mb-lg-0">
-                <h1
-                  class="display-6 fw-bold mb-3"
-                  style="line-height: 1.2; color: white;"
-                >
-                  END-TO-END<br />SUSTAINABILITY
-                </h1>
-                <p class="lead fs-5 mb-0" style="color: white;">
-                  Connecting all stakeholders to meet a common goal.
-                </p>
-              </div>
-
-              <!-- Center Column: Illustration -->
-              <div class="col-lg-2 text-center mb-4 mb-lg-0"></div>
-
-              <!-- Right Column: Services List -->
-              <div class="col-lg-5" style="color: white;">
-                <ul class="list-unstyled fs-5">
-                  <li class="mb-1">
-                    <strong>LCA</strong> – lifecycle cost analysis
-                  </li>
-                  <li class="mb-1">
-                    <strong>GHG</strong> – green house gas baseline
-                  </li>
-                  <li class="mb-1">
-                    <strong>Decarbonisation</strong> – strategy and execution
-                  </li>
-                  <li class="mb-1">
-                    <strong>Purchasing</strong> – solution benchmarking
-                  </li>
-                  <li class="mb-1">
-                    <strong>Monitoring & Reporting</strong> – global
-                    frameworks
-                  </li>
-                  <li class="mb-1">
-                    <strong>Growth & Fundraising</strong> – for clean tech
-                    companies
-                  </li>
-                  <li class="mb-0">
-                    <strong>Climate Financing</strong> – making adoption easier
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Service End -->
-
-<div class="container-xxl py-2">
-    <div class="container py-5 wow fadeInUp">
-    
-    <!-- Clean Tech Section -->
-    <div class="row mb-5 align-items-center">
-        <!-- Circular Image -->
-        <div class="col-lg-3 text-center mb-4 mb-lg-0">
-            <img src="img/clean-tech.png" alt="Climate Finance" class="rounded-circle img-fluid"
-                style="width: 200px; height: 200px; object-fit: cover"/>
-        </div>
-
-        <!-- Services List -->
-        <div class="col-lg-9">
-            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
-                Consulting Services for Clean Tech Firms
-            </h2>
-            <ul class="list-unstyled">
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
-                    <span class="fs-5">Business Growth & Strategy</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Strategic planning and market expansion guidance for sustainable growth</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
-                    <span class="fs-5">Transaction Advisory</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Expert guidance on mergers, acquisitions, and investment deals</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
-                    <span class="fs-5">Operational Improvement</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Optimize processes and enhance operational efficiency</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Corporate & Industrial Section -->
-    <div class="row mb-5 align-items-center">
-        <!-- Circular Image -->
-        <div class="col-lg-3 text-center mb-4 mb-lg-0">
-            <img src="img/corporate-img.jpeg" alt="Clean Tech" class="rounded-circle img-fluid"
-                style="width: 200px; height: 200px; object-fit: cover"/>
-        </div>
-
-        <!-- Services List -->
-        <div class="col-lg-9">
-            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
-                Corporate & Industrial Sustainability Services
-            </h2>
-            <ul class="list-unstyled">
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
-                    <span class="fs-5">Sustainability Strategy</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Develop comprehensive roadmaps for achieving sustainability goals</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
-                    <span class="fs-5">Audit & Compliance</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Ensure regulatory compliance and ESG reporting standards</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
-                    <span class="fs-5">Decarbonization Support</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Practical solutions to reduce carbon emissions and reach net-zero</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Climate Finance Section -->
-    <div class="row mb-5 align-items-center">
-        <!-- Circular Image -->
-        <div class="col-lg-3 text-center mb-4 mb-lg-0">
-            <img src="img/climate-fin.jpeg" alt="Corporate & Industrial" class="rounded-circle img-fluid"
-                style="width: 200px; height: 200px; object-fit: cover"/>
-        </div>
-
-        <!-- Services List -->
-        <div class="col-lg-9">
-            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
-                Climate Finance Services for Investors
-            </h2>
-            <ul class="list-unstyled">
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
-                    <span class="fs-5">Clean Tech Incubators</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Support early-stage clean tech companies with innovation programs</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
-                    <span class="fs-5">Climate Finance Structuring</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Design and implement effective climate finance mechanisms</p>
-                    </div>
-                </li>
-                <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
-                    <span class="badge rounded-circle me-3"
-                        style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
-                    <span class="fs-5">ESG Risk & Reporting</span>
-                    
-                    <!-- Custom Tooltip -->
-                    <div class="service-tooltip">
-                        <div class="tooltip-arrow"></div>
-                        <p class="mb-0">Assess and report ESG risks for informed investment decisions</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-</div>
-    
-</div>
-<!-- Testimonial End -->
-  
-      <!-- Newsletter Start -->
-      <div
-        class="container-xxl my-6 wow fadeInUp"
-        data-wow-delay="0.1s"
-        style="background: linear-gradient(90deg, #00a651 0%, #1e63db 100%);
-"
-      >
-        <div class="container px-lg-5" >
-          <div class="row align-items-center" style="height: 250px;">
-            <div class="col-12 col-md-6">
-              <h3 style="color: white;">Work with Us</h3>
-              <small style="color: white;"
-                >Get personalized guidance on your sustainability journey.</small
-              >
-               <div class="mt-5">
-                    <a href="https://ploxi-demo.vercel.app/" class="btn btn-outline-light rounded-pill px-5 py-3" style="background-color: white; color: green; border: none; font-weight: bold;">Book a demo</a>
-                </div>
-            </div>
-            <div class="col-md-6 text-center mb-n5 d-none d-md-block">
-              <img
-                class="img-fluid mt-5"
-                style="max-height: 250px"
-                src="img/email-vector.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Newsletter End -->
-
-<!-- Bootstrap JS -->
-<script src="js/bootstrap.bundle.min.js"></script>
-
-      <!-- Footer Start -->
-      <div
-        class="container-fluid text-light footer pt-5 wow fadeIn"
-        data-wow-delay="0.1s"
-        style="margin-top: 6rem;background-color: #0a1f36"
-      >
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-md-6 col-lg-3">
-              <h5 class="mb-4" style="color: white;">Get In Touch</h5>
-              <p>
-                <i class="fa fa-map-marker-alt me-3"></i>Embassy Golf Links Business Parks, Domlur, Bengaluru. Karnataka, India
+        <div class="container position-relative py-5" style="z-index: 2">
+          <div class="row align-items-center">
+            <!-- Left Column: Main Heading and Description -->
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <h1 class="display-6 fw-bold mb-3" style="line-height: 1.2; color: white;">
+                END-TO-END<br />SUSTAINABILITY
+              </h1>
+              <p class="lead fs-5 mb-0" style="color: white;">
+                Connecting all stakeholders to meet a common goal.
               </p>
-              <p><i class="fa fa-phone-alt me-3"></i>+91 77959 34859</p>
-              <p><i class="fa fa-envelope me-3"></i>contact@ploxiconsult.com</p>
-              <div class="d-flex pt-2">
-                <!-- <a class="btn btn-outline-light btn-social" href=""
+            </div>
+
+            <!-- Center Column: Illustration -->
+            <div class="col-lg-2 text-center mb-4 mb-lg-0"></div>
+
+            <!-- Right Column: Services List -->
+            <div class="col-lg-5" style="color: white;">
+              <ul class="list-unstyled fs-5">
+                <li class="mb-1">
+                  <strong>LCA</strong> – lifecycle cost analysis
+                </li>
+                <li class="mb-1">
+                  <strong>GHG</strong> – green house gas baseline
+                </li>
+                <li class="mb-1">
+                  <strong>Decarbonisation</strong> – strategy and execution
+                </li>
+                <li class="mb-1">
+                  <strong>Purchasing</strong> – solution benchmarking
+                </li>
+                <li class="mb-1">
+                  <strong>Monitoring & Reporting</strong> – global
+                  frameworks
+                </li>
+                <li class="mb-1">
+                  <strong>Growth & Fundraising</strong> – for clean tech
+                  companies
+                </li>
+                <li class="mb-0">
+                  <strong>Climate Financing</strong> – making adoption easier
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service End -->
+
+    <div class="container-xxl py-2">
+      <div class="container py-5 wow fadeInUp">
+
+        <!-- Clean Tech Section -->
+        <div class="row mb-5 align-items-center">
+          <!-- Circular Image -->
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <img src="img/clean-tech.png" alt="Climate Finance" class="rounded-circle img-fluid"
+              style="width: 200px; height: 200px; object-fit: cover" />
+          </div>
+
+          <!-- Services List -->
+          <div class="col-lg-9">
+            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
+              Consulting Services for Clean Tech Firms
+            </h2>
+            <ul class="list-unstyled">
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
+                <span class="fs-5">Business Growth & Strategy</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Strategic planning and market expansion guidance for sustainable growth</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
+                <span class="fs-5">Transaction Advisory</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Expert guidance on mergers, acquisitions, and investment deals</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
+                <span class="fs-5">Operational Improvement</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Optimize processes and enhance operational efficiency</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Corporate & Industrial Section -->
+        <div class="row mb-5 align-items-center">
+          <!-- Circular Image -->
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <img src="img/corporate-img.jpeg" alt="Clean Tech" class="rounded-circle img-fluid"
+              style="width: 200px; height: 200px; object-fit: cover" />
+          </div>
+
+          <!-- Services List -->
+          <div class="col-lg-9">
+            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
+              Corporate & Industrial Sustainability Services
+            </h2>
+            <ul class="list-unstyled">
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
+                <span class="fs-5">Sustainability Strategy</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Develop comprehensive roadmaps for achieving sustainability goals</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
+                <span class="fs-5">Audit & Compliance</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Ensure regulatory compliance and ESG reporting standards</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
+                <span class="fs-5">Decarbonization Support</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Practical solutions to reduce carbon emissions and reach net-zero</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Climate Finance Section -->
+        <div class="row mb-5 align-items-center">
+          <!-- Circular Image -->
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <img src="img/climate-fin.jpeg" alt="Corporate & Industrial" class="rounded-circle img-fluid"
+              style="width: 200px; height: 200px; object-fit: cover" />
+          </div>
+
+          <!-- Services List -->
+          <div class="col-lg-9">
+            <h2 class="fw-bold mb-4" style="color: var(--bs-dark)">
+              Climate Finance Services for Investors
+            </h2>
+            <ul class="list-unstyled">
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">1</span>
+                <span class="fs-5">Clean Tech Incubators</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Support early-stage clean tech companies with innovation programs</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">2</span>
+                <span class="fs-5">Climate Finance Structuring</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Design and implement effective climate finance mechanisms</p>
+                </div>
+              </li>
+              <li class="mb-3 w-50 d-flex align-items-start hover-service-item position-relative">
+                <span class="badge rounded-circle me-3"
+                  style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center; background-color: #16A34A;">3</span>
+                <span class="fs-5">ESG Risk & Reporting</span>
+
+                <!-- Custom Tooltip -->
+                <div class="service-tooltip">
+                  <div class="tooltip-arrow"></div>
+                  <p class="mb-0">Assess and report ESG risks for informed investment decisions</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Newsletter Start -->
+    <div class="container-xxl my-6 wow fadeInUp" data-wow-delay="0.1s" style="background: linear-gradient(90deg, #00a651 0%, #1e63db 100%);
+">
+      <div class="container px-lg-5">
+        <div class="row align-items-center" style="height: 250px;">
+          <div class="col-12 col-md-6">
+            <h3 style="color: white;">Work with Us</h3>
+            <small style="color: white;">Get personalized guidance on your sustainability journey.</small>
+            <div class="mt-5">
+              <a href="https://ploxi-demo.vercel.app/" class="btn btn-outline-light rounded-pill px-5 py-3"
+                style="background-color: white; color: green; border: none; font-weight: bold;">Book a demo</a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+            <img class="img-fluid mt-5" style="max-height: 250px" src="img/email-vector.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Footer Start -->
+    <div class="container-fluid text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+      style="margin-top: 6rem;background-color: #0a1f36">
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-4" style="color: white;">Get In Touch</h5>
+            <p>
+              <i class="fa fa-map-marker-alt me-3"></i>Embassy Golf Links Business Parks, Domlur, Bengaluru. Karnataka,
+              India
+            </p>
+            <p><i class="fa fa-phone-alt me-3"></i>+91 77959 34859</p>
+            <p><i class="fa fa-envelope me-3"></i>contact@ploxiconsult.com</p>
+            <div class="d-flex pt-2">
+              <!-- <a class="btn btn-outline-light btn-social" href=""
                   ><i class="fab fa-twitter"></i
                 ></a>
                 <a class="btn btn-outline-light btn-social" href=""
                   ><i class="fab fa-facebook-f"></i
                 ></a> -->
-                <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ploxi.earth/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/ploxi/?originalSubdomain=in"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
+              <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/ploxi.earth/"><i
+                  class="fab fa-instagram"></i></a>
+              <a class="btn btn-outline-light btn-social"
+                href="https://www.linkedin.com/company/ploxi/?originalSubdomain=in"><i
+                  class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-              <h5 class="mb-4" style="color: white;">Quick Link</h5>
-              <a class="btn btn-link" href="about.html">About Us</a>
-              <a class="btn btn-link" href="contact.html">Contact Us</a>
-              <a class="btn btn-link" href="market.html">Market</a>
-              <a class="btn btn-link" href="service.html">Service</a>
-              <a class="btn btn-link" href="blog.html">Blog</a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <h5 class=" mb-4" style="color: white;">Popular Link</h5>
-              <a class="btn btn-link" href="about.html">About Us</a>
-              <a class="btn btn-link" href="contact.html">Contact Us</a>
-              <a class="btn btn-link" href="market.html">Market</a>
-              <a class="btn btn-link" href="service.html">Service</a>
-              <a class="btn btn-link" href="blog.html">Blog</a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <h5 class="mb-4" style="color: white;">Newsletter</h5>
-              <p>
-                Join our email list and get access to blog articles about the global transition landscape.
-              </p>
-              <div class="position-relative w-100 mt-3">
-                <form id="newsletter-form">
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-4" style="color: white;">Quick Link</h5>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-link" href="market.html">Market</a>
+            <a class="btn btn-link" href="service.html">Service</a>
+            <a class="btn btn-link" href="tools.html">Tools</a>
+            <a class="btn btn-link" href="blog.html">Blog</a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class=" mb-4" style="color: white;">Popular Link</h5>
+            <a class="btn btn-link" href="about.html">About Us</a>
+            <a class="btn btn-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-link" href="market.html">Market</a>
+            <a class="btn btn-link" href="service.html">Service</a>
+            <a class="btn btn-link" href="tools.html">Tools</a>
+            <a class="btn btn-link" href="blog.html">Blog</a>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-4" style="color: white;">Newsletter</h5>
+            <p>
+              Join our email list and get access to blog articles about the global transition landscape.
+            </p>
+            <div class="position-relative w-100 mt-3">
+              <form id="newsletter-form">
                 <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="email" id="email-input"
                   placeholder="Enter your email" required style="height: 48px" />
                 <button type="submit" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2 "
@@ -506,42 +455,41 @@
                 </button>
                 <p id="message" style="display:none; margin-top: 10px;"></p>
               </form>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer End -->
-
-      <!-- Back to Top -->
-      <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
-        ><i class="bi bi-arrow-up"></i
-      ></a>
     </div>
+    <!-- Footer End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-       <script src="js/newsletter.js"></script>
-  </body>
-  <script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/newsletter.js"></script>
+</body>
+<script>
   document.addEventListener('DOMContentLoaded', function () {
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl, {
-      trigger: 'hover',
-      placement: 'right',
-      offset: [0, 1] // [horizontal, vertical] offset in pixels
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl, {
+        trigger: 'hover',
+        placement: 'right',
+        offset: [0, 1] // [horizontal, vertical] offset in pixels
+      });
     });
   });
-});
 
 </script>
+
 </html>
